@@ -1,7 +1,7 @@
 -module(bmi).
 -export([compute/1]).
 
-%asummes weight in kg, and height in meters
+%assumes weight in kg, and height in meters
 compute({Weight,Height}) ->
 	BMI = Weight / (Height * Height),
 	categorize(BMI).
